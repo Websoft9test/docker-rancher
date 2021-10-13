@@ -1,6 +1,12 @@
-## About
+## Rancher
 
-This repository is forked from ONLYOFFICE/Docker-CommunityServer, we have the following modifications are provided
+### Install
 
-* replace README.md
-* add README-zh.md, CHANGELOG.md, Note.md, License.md, docker-compose.yml,.env, src, .github folder
+Ranker need https, simple installation below:
+
+```
+docker run -d --restart=unless-stopped \
+  -p 9015:80 -p 443:443 \
+  --privileged \
+  rancher/rancher:latest
+```
