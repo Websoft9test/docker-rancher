@@ -10,14 +10,14 @@ This repository is an **Cloud Native solution** powered by [Websoft9](https://ww
 
 ## System Requirements
 
-The following are the minimal [recommended requirements](https://github.com/rancher/docker#recommended-system-requirements):
+The following are the minimal [recommended requirements](https://rancher.com/quick-start):
 
 * **OS**: Red Hat, CentOS, Debian, Ubuntu or other's Linux OS
 * **Public Cloud**: More than 20+ major Cloud such as AWS, Azure, Google Cloud, Alibaba Cloud, HUAWEIClOUD, Tencent Cloud
 * **Private Cloud**: KVM, VMware, VirtualBox, OpenStack
 * **ARCH**:  Linux x86-64, ARM 32/64, Windows x86-64, IBM POWER8, x86/i686
-* **RAM**: 4 GB or more
-* **CPU**: 2 cores or higher
+* **RAM**: 2 GB or more
+* **CPU**: 1 cores or higher
 * **HDD**: at least 20 GB of free space
 * **Swap file**: at least 2 GB
 * **bandwidth**: more fluent experience over 100M  
@@ -66,7 +66,7 @@ We assume that you are already familiar with Docker, and you can modify [docker-
 ```
 git clone --depth=1 https://github.com/Websoft9/docker-rancher
 cd docker-rancher
-docker-compose -f docker-compose.yml  --env-file  .env up -d
+docker-compose  up -d
 ```
 
 ### FAQ
@@ -89,14 +89,13 @@ By default, the available users are:
 
 | Username    | Password |
 | ------- | -------- |
-|  admin | 123456  |
+|  admin | 随机密码  |
 
 #### Services and Ports
 
 | Service | Port | Use |  Necessity |
 | --- | --- | --- | --- |
-| rancher-server | 9002 | Web-GUI database management tool | Y |
-| phpmyadmin | 9090 | Web-GUI database management tool | Y |
+| rancher-server | 9002 | Web-GUI of Rancher | Y |
 ## Documentation
 
 [Rancher Administrator Guide](https://support.websoft9.com/docs/rancher)

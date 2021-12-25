@@ -10,14 +10,14 @@
 
 ## 系统要求
 
-安装本项目，确保符合如下的条件（[详细参考](https://github.com/rancher/docker#recommended-system-requirements)）：
+安装本项目，确保符合如下的条件（[详细参考](https://rancher.com/quick-start)）：
 
 * **操作系统**: Red Hat, CentOS, Debian, Ubuntu 等主流 Linux等 操作系统
 * **公有云**: AWS, Azure, Google Cloud, 阿里云, 腾讯云, 华为云等20多个全球主流云
 * **私有云**: KVM, VMware, VirtualBox, OpenStack 等主流虚拟化架构
 * **CPU架构**: Linux x86-64, ARM 32/64, Windows x86-64, IBM POWER8, x86/i686
-* **内存**: 4GB以上
-* **CPU**: 2核以上
+* **内存**: 2GB以上
+* **CPU**: 1核以上
 * **存储**: 20GB以上
 * **Swap分区**: 2GB以上
 * **带宽**: 100M以上体验更流畅
@@ -65,12 +65,12 @@ sudo systemctl start docker
 
 #### 安装 Rancher
 
-直接运行下面的命令快速安装应用。如果你熟悉 Docker，建议先修改 [docker-compose](docker-compose-production.yml) 文件以满足自己的需求
+直接运行下面的命令快速安装应用。如果你熟悉 Docker，建议先修改 [docker-compose](docker-compose.yml) 文件以满足自己的需求
 
 ```
 git clone --depth=1 https://github.com/Websoft9/docker-rancher
 cd docker-rancher
-sudo docker-compose -f docker-compose.yml --env-file .env up -d
+sudo docker-compose up -d
 ```
 
 ### 常见问题
@@ -96,14 +96,13 @@ sudo docker-compose -f docker-compose.yml --env-file .env up -d
 
 | 用户名    | 密码 |
 | ------- | -------- |
-|  admin | 123456  |
+|  admin | 随机密码  |
 
 #### 服务和端口
 
 | 名称 | 端口号 | 用途 |  必要性 |
 | --- | --- | --- | --- |
 | rancher-server | 9002 | 浏览器访问 Rancher | Y |
-| phpmyadmin | 9090 | 数据库可视化管理工具 | Y |
 ## 文档
 
 [Rancher 管理员手册](https://support.websoft9.com/docs/rancher)
